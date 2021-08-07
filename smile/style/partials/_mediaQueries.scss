@@ -1,0 +1,43 @@
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .search {
+    display: none;
+    visibility: hidden;
+  }
+
+  .made-in {
+    display: none;
+  }
+  .img-hero {
+    position: relative;
+    left: 0;
+    &::after {
+      top: 0%;
+      font-size: 7rem;
+      letter-spacing: 1px;
+      transform: rotate(0);
+    }
+  }
+
+  .links,
+  .text-h1,
+  .hoddie,
+  .price {
+    margin-left: 0;
+  }
+}

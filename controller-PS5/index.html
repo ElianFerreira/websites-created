@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PS5</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="styles/bootstrap/css/bootstrap.css" />
+
+    <!-- SCSS -->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- SVG Inject -->
+    <script src="js/svg-inject.min.js"></script>
+
+    <!-- icone -->
+    <link rel="sortcut icon" href="images/ps-white.png" type="image/gif" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light pt-2">
+        <div class="container">
+          <a class="navbar-brand text-light" href="#">Sony</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+              <a class="nav-link text-light" href="#">Shop</a>
+              <a class="nav-link text-light" id="pdts" href="#product"
+                >Products</a
+              >
+              <a class="nav-link text-light" href="#">About</a>
+              <a class="nav-link text-light" href="#">Contact</a>
+            </div>
+            <div class="social">
+              <img
+                class="me-3"
+                src="images/svg/akar-icons_heart.svg"
+                onload="SVGInject(this)"
+              />
+              <img
+                src="images/svg/fe_remove-cart.svg"
+                onload="SVGInject(this)"
+              />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="">
+      <section class="container">
+        <div class="row">
+          <div class="col-lg-7" data-tilt>
+            <img class="img-fluid" src="images/svg/controle.png" alt="" />
+          </div>
+          <div
+            class="col-lg-5 flex-column text-center d-flex justify-content-center align-items-start"
+          >
+            <h1 class="display-3 text-light fw-bold">Playstation 5</h1>
+            <h1 class="display-3 text-light fw-bold">
+              <span style="color: aqua">Dual</span>Sense
+            </h1>
+            <p class="text-start" style="color: #9f9f9f">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
+              accusamus reprehenderit consequuntur ratione consequatur beatae
+              vitae minima dolorem explicabo tenetur, quos quis sapiente. Sed
+              tempore architecto amet tenetur aut enim.
+            </p>
+            <div class="button d-flex align-items-center">
+              <button class="btn btn-button text-light btn-lg">
+                Add To Cart
+              </button>
+              <img
+                class="ms-5"
+                src="images/svg/akar-icons_heart.svg"
+                onload="SVGInject(this)"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="product" class="d-flex align-items-lg-center">
+        <!-- Content -->
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-5 flex-column text-center d-flex justify-content-center align-items-start"
+            >
+              <img
+                class="img-fluid"
+                src="images/svg/Logo_Horizon_Zero_Dawn.svg"
+                onload="SVGInject(this)"
+              />
+              <p class="text-start mt-3" style="color: #9f9f9f">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quaerat accusamus reprehenderit consequuntur ratione consequatur
+                beatae vitae minima dolorem explicabo tenetur, quos quis
+                sapiente. Sed tempore architecto amet tenetur aut enim.
+              </p>
+
+              <div class="d-flex align-items-center">
+                <section class="modal-video">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <img
+                      class="me-2"
+                      src="images/akar-icons_play.svg"
+                      onload="SVGInject(this)"
+                    />
+                    Watch the teaser
+                  </button>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-fullscreen">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div
+                          class="modal-body overflow-hidden d-flex justify-content-center"
+                        >
+                          <video autoplay loop controls class="video">
+                            <source src="video/horizon.webm" type="video/mp4" />
+                          </video>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <img
+                  class="ms-5"
+                  src="images/svg/akar-icons_heart.svg"
+                  onload="SVGInject(this)"
+                />
+              </div>
+            </div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-3 horizon-img">
+              <img
+                class="img-fluid"
+                src="images/pngarea.com_horizon-zero-dawn-7684268.png"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+      integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="styles/bootstrap/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

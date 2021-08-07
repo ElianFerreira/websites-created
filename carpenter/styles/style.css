@@ -1,0 +1,337 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+/************
+Colors
+***************/
+/************
+Resets Globais
+***************/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: 'Mukta';
+}
+
+/***************************
+Menu inicio
+**************************************/
+header {
+  width: 100%;
+  padding-top: 20px;
+  z-index: 999;
+}
+
+header.active {
+  width: 100%;
+  padding-top: 20px;
+  z-index: 999;
+  background-color: #f2f2f2;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: regular;
+  margin-right: 30px;
+  position: relative;
+  color: #1a1a1a;
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  -webkit-transform: skew(-25deg);
+          transform: skew(-25deg);
+  border-radius: 5px;
+  background-color: #824c17;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover::after {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  width: 100%;
+}
+
+/***************************
+Menu fim
+**************************************/
+/***************************
+background bubble inicio
+**************************************/
+.main {
+  z-index: 999;
+  padding: 0 0 0 20px;
+}
+
+.buble {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 900px;
+  z-index: -1;
+}
+
+.sec {
+  width: 100%;
+  height: 100vh;
+  margin-top: 100px;
+}
+
+.sec h1 {
+  color: #1a1a1a;
+  font-weight: 300;
+}
+
+.spacing-top {
+  margin-top: 70px;
+}
+
+.hipen {
+  position: relative;
+}
+
+.hipen::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 30%;
+  height: 6px;
+  -webkit-transform: skew(-25deg);
+          transform: skew(-25deg);
+  border-radius: 5px;
+  background: linear-gradient(86.83deg, #d9c0a6 17.97%, rgba(255, 255, 255, 0) 329.17%);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.buttons {
+  margin-top: 60px;
+}
+
+.btn {
+  padding: 0;
+  margin-right: 30px;
+  text-transform: uppercase;
+  z-index: 1;
+  font-size: 14px;
+  background-color: transparent;
+  color: #1a1a1a;
+  width: 190px;
+  height: 50px;
+  overflow: hidden;
+  border: 2px solid #d9c0a6;
+  border-radius: 10px;
+  position: relative;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: #d9c0a6;
+  z-index: -1;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+.btn-1 {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: initial;
+}
+
+.btn-1::before {
+  height: 110%;
+  width: 110%;
+}
+
+.btn-1:hover {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-box-shadow: 0 0 1em #d9c0a6;
+          box-shadow: 0 0 1em #d9c0a6;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.btn-2 {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.btn-2::before {
+  width: 110%;
+  height: 0;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.btn-2:hover {
+  -webkit-box-shadow: 0 0 1em #d9c0a6;
+          box-shadow: 0 0 1em #d9c0a6;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.btn-2:hover::before {
+  height: 380%;
+}
+
+/***************************
+background bubble fim
+**************************************/
+/***************************
+social media inicio
+**************************************/
+.social-media svg {
+  max-width: 30px;
+  margin-right: 30px;
+}
+
+.fab-face {
+  width: 16px;
+}
+
+/***************************
+social media fim
+**************************************/
+/***************************
+Seção 2 inicio
+**************************************/
+.content-design {
+  width: 100%;
+  height: 100vh;
+}
+
+.content-design h1 {
+  color: #1a1a1a;
+  position: relative;
+}
+
+.content-design h1::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 7%;
+  height: 6px;
+  -webkit-transform: skew(-25deg);
+          transform: skew(-25deg);
+  border-radius: 5px;
+  background: linear-gradient(86.83deg, #d9c0a6 17.97%, rgba(255, 255, 255, 0) 329.17%);
+}
+
+.content-design .moveis {
+  margin-top: 180px;
+  margin-bottom: 180px;
+}
+
+.content-design .img-fluid {
+  max-width: 150px;
+}
+
+.content-design .img-mesa {
+  max-width: 350px;
+}
+
+.content-design h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #d1b294;
+  font-weight: bold;
+}
+
+.content-design h2 {
+  font-family: 'Ubuntu';
+  color: #1a1a1a;
+  font-weight: regular;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#slider {
+  position: relative;
+}
+
+#slider img {
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+#slider img.selected,
+#slider svg.selected {
+  opacity: 1;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-item img {
+  max-width: 350px;
+  border-radius: 10px;
+}
+
+.btn-next,
+.btn-prev {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  position: absolute;
+  top: 150px;
+}
+
+.btn-next a,
+.btn-prev a {
+  color: #fff;
+}
+
+.btn-next {
+  right: 150px;
+}
+
+.btn-prev {
+  left: 150px;
+}
+
+/***************************
+Seção 2 fim
+**************************************/
+/*# sourceMappingURL=style.css.map */

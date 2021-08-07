@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #d8dbe2;
+  font-family: 'Poppins';
+}
+
+/*=======================
+        Header
+ ==================*/
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+}
+
+.nav .nav-menu {
+  margin-right: auto;
+}
+
+.nav .lang {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.nav > div {
+  padding: 0 30px;
+  font-size: 20px;
+}
+
+.btn-menu {
+  border: none;
+  background-color: black;
+  width: 20px;
+  height: 2px;
+  position: relative;
+}
+
+.btn-menu::after {
+  content: '';
+  position: absolute;
+  background-color: black;
+  width: 20px;
+  height: 2px;
+  left: 0;
+  top: 5px;
+}
+
+.btn-menu::before {
+  content: '';
+  position: absolute;
+  background-color: black;
+  width: 20px;
+  height: 2px;
+  left: 0;
+  top: -5px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul a {
+  text-decoration: none;
+}
+
+/*=======================
+        Social
+ ==================*/
+.social-media ul {
+  position: absolute;
+  bottom: 250px;
+  left: -140px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.social-media ul li {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 0 30px;
+}
+
+.social-media ul li a {
+  color: black;
+}
+
+.text {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 90px;
+  margin-left: 100px;
+}
+
+.text h1 {
+  font-size: 100px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: -10px;
+}
+
+.text h1::after {
+  content: 'duality';
+  position: absolute;
+  top: 40px;
+  left: -80px;
+  color: #efde74;
+  z-index: -1;
+  font-size: 100px;
+  font-weight: 600;
+  letter-spacing: 8px;
+}
+
+.text h3 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.text p {
+  width: 250px;
+  font-size: 12px;
+  margin-top: 30px;
+  font-weight: 500;
+  text-align: left;
+}
+
+/*=======================
+        Sponsor
+ ==================*/
+.sponsor {
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  text-align: center;
+}
+
+.sponsor img {
+  width: 200px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.sponsor p {
+  margin-top: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 900;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.distortion {
+  width: 580px;
+  height: 550px;
+  position: absolute;
+  right: 300px;
+  bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */

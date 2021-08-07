@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap");
+body {
+  background: linear-gradient(287.96deg, #070a40 16.58%, #076df2 100%);
+  overflow: hidden;
+  font-family: 'Mukta';
+}
+
+.nav-link {
+  margin-left: 50px;
+  position: relative;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.nav-link:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0%;
+  height: 5px;
+  background: linear-gradient(23deg, #04b2d9 -4.38%, #076df2 83.84%);
+  border-radius: 10px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transform: skew(40deg);
+          transform: skew(40deg);
+}
+
+.nav-link:hover:after {
+  width: 80%;
+}
+
+.button button {
+  background: linear-gradient(23deg, #04b2d9 -4.38%, #076df2 83.84%);
+  border-radius: 45px;
+  width: 180px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-box-shadow: 0px 0px 5px 0px #04a4de;
+          box-shadow: 0px 0px 5px 0px #04a4de;
+  border: none;
+}
+
+.button button:hover {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0px 0px 10px 0px #04a4de;
+          box-shadow: 0px 0px 10px 0px #04a4de;
+}
+
+main {
+  margin-top: 5rem;
+}
+
+#product {
+  height: 100vh;
+}
+
+.bg-video {
+  width: 90vw;
+  height: 90vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bg-video::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background: rgba(13, 13, 13, 0.92);
+}
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    overflow-y: visible;
+    height: 100%;
+  }
+  body nav {
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  body .nav-link {
+    margin-left: 0;
+  }
+  body #product {
+    margin-top: 5rem;
+    height: 100%;
+  }
+  body .horizon-img img {
+    margin-top: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,114 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+}
+
+.links {
+  width: 100px;
+  margin-left: 200px;
+  ul {
+    display: flex;
+    gap: 20px;
+
+    li {
+      font-weight: 500;
+      transition: 0.3s ease;
+      a {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        color: rgba($color: #9dcaf1, $alpha: 1);
+      }
+      &:last-child {
+        font-weight: bold;
+        border-bottom: 1px solid $color-blue;
+      }
+    }
+  }
+}
+
+.text-h1 {
+  margin-left: 200px;
+  margin-top: 70px;
+  width: 300px;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  line-height: 35px;
+  text-align: left;
+  text-transform: uppercase;
+
+  h1 {
+    font-weight: 600;
+    color: $bg-black;
+  }
+}
+
+.hoddie {
+  margin-left: 200px;
+  margin-top: 70px;
+  display: flex;
+  gap: 20px;
+  font-size: 0.7rem;
+  color: rgba($color: $color-blue, $alpha: 1);
+  cursor: pointer;
+}
+
+.price {
+  width: 300px;
+  margin-left: 200px;
+  margin-top: 30px;
+  color: $bg-black;
+  p {
+    text-align: left;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.7rem;
+    margin-top: 20px;
+    color: rgba($color: $color-blue, $alpha: 1);
+  }
+}
+
+.img-hero {
+  position: absolute;
+  left: 40%;
+  bottom: -10px;
+  img {
+    width: 100%;
+  }
+
+  &::after {
+    content: 'SMILE';
+    position: absolute;
+    top: 19%;
+    right: 0%;
+    transform: rotate(-90deg);
+    font-size: 14rem;
+    letter-spacing: 6px;
+    z-index: -1;
+    font-weight: bold;
+    color: $bg-black;
+  }
+}
+
+.made-in {
+  position: absolute;
+  right: 15%;
+  bottom: 35%;
+
+  h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.9rem;
+    line-height: 30px;
+    color: $bg-black;
+  }
+
+  p {
+    text-transform: uppercase;
+    color: $color-blue;
+    padding-top: 30px;
+    font-size: 0.8rem;
+  }
+}

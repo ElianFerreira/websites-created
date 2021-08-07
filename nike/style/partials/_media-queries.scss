@@ -1,0 +1,56 @@
+@media (max-width: 1200px) {
+  #nav-menu {
+    display: none;
+  }
+  #btn-hamb {
+    display: block;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-img {
+    .img-item {
+      position: initial;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-aside {
+    display: block;
+    margin: 90px auto 0;
+
+    h2 {
+      padding-top: 20px;
+      margin-bottom: 15px;
+      transform: rotate(0deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .btn-size {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 10px;
+    }
+  }
+
+  .cart{
+    margin-bottom: 30px;
+  }
+
+  .slider{
+    margin-bottom: 30px;
+  }
+}
+

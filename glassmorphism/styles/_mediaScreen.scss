@@ -1,0 +1,27 @@
+@media screen and (max-width: 990px) {
+  body {
+    height: 100%;
+  }
+
+  .cards {
+    transform: translateX(0);
+
+    h1,
+    p {
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    button {
+      margin-left: 0;
+    }
+  }
+
+  .col-img {
+    padding: 50px 0;
+  }
+
+  .social {
+    display: none;
+  }
+}

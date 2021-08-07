@@ -1,0 +1,97 @@
+.content-img {
+  .img-item {
+    position: absolute;
+    top: -150px;
+    width: 50%;
+    right: 130px;
+    z-index: -10;
+    display: none;
+  }
+
+  .img-item.active {
+    display: block;
+  }
+}
+
+.content {
+  h1 {
+    color: #fff;
+    font-family: 'Open sans';
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+  .p-desc {
+    font-size: 0.7rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    max-width: 350px;
+  }
+
+  .valor {
+    color: #fff;
+    font-family: 'Poppins';
+    margin-top: 50px;
+    position: relative;
+    &::after {
+      content: 'Price';
+      position: absolute;
+      display: block;
+      top: -20px;
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.content-aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  h2 {
+    transform: rotate(90deg);
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Poppins';
+    &::after {
+      content: '(Size Guide)';
+      display: block;
+      font-size: 0.7rem;
+      font-weight: lighter;
+    }
+  }
+
+  .btn-size {
+    background: transparent;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 2px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.746);
+      box-shadow: 0 0 0.2rem black;
+      border: none;
+      transform: scale(1.1);
+      transition: all 0.3s;
+    }
+  }
+
+  .btn-size.active {
+    background-color: rgba(0, 0, 0, 0.746);
+    box-shadow: 0 0 0.2rem black;
+    border: none;
+    transform: scale(1.1);
+  }
+}

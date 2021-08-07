@@ -1,0 +1,15 @@
+@media (max-width: 900px) {
+  .bubble {
+    height: 45vh;
+    width: 100%;
+
+    background-color: #fff;
+    svg{
+      opacity: 0;
+    }
+  }
+
+  .bubble2 {
+    display: none;
+  }
+}

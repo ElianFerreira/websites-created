@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d8dbe2;
+  font-family: 'Poppins';
+}
+
+/*=======================
+        Header
+ ==================*/
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+
+  .nav-menu {
+    margin-right: auto;
+  }
+
+  .lang {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+.nav > div {
+  padding: 0 30px;
+  font-size: 20px;
+}
+
+.btn-menu {
+  border: none;
+  background-color: black;
+  width: 20px;
+  height: 2px;
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 20px;
+    height: 2px;
+    left: 0;
+    top: 5px;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 20px;
+    height: 2px;
+    left: 0;
+    top: -5px;
+  }
+}
+
+ul {
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+/*=======================
+        Social
+ ==================*/
+
+.social-media {
+  ul {
+    position: absolute;
+    bottom: 250px;
+    left: -140px;
+    transform: rotate(-90deg);
+
+    li {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      display: inline-block;
+      padding: 0 30px;
+
+      a {
+        color: black;
+      }
+    }
+  }
+}
+
+// /*=======================
+//         Text
+//  ==================*/
+
+.text {
+  // position: absolute;
+  // top: 300px;
+  // left: 100px;
+  transform: rotate(-90deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
+  margin-left: 100px;
+
+  h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: -10px;
+
+    &::after {
+      content: 'duality';
+      position: absolute;
+      top: 40px;
+      left: -80px;
+      color: #efde74;
+      z-index: -1;
+      font-size: 100px;
+      font-weight: 600;
+      letter-spacing: 8px;
+    }
+  }
+
+  h3 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  p {
+    width: 250px;
+    font-size: 12px;
+    margin-top: 30px;
+    font-weight: 500;
+    text-align: left;
+  }
+}
+
+/*=======================
+        Sponsor
+ ==================*/
+
+.sponsor {
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  text-align: center;
+  img {
+    width: 200px;
+    transform: rotate(-90deg);
+  }
+
+  p {
+    margin-top: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 900;
+    transform: rotate(180deg);
+  }
+}
+
+.distortion {
+  width: 580px;
+  // height: 720px;
+  height: 550px;
+  position: absolute;
+  right: 300px;
+  bottom: 0;
+  // display: none;
+}

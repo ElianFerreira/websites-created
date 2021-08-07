@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- Svg Inject -->
+    <script src="js/svg-inject.min.js"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+
+    <title>Nike</title>
+  </head>
+  <body>
+    <header class="header">
+      <div id="logo">
+        <img src="img/svg/nike-logo.svg" onload="SVGInject(this)" />
+      </div>
+
+      <button id="btn-hamb" class="active"></button>
+
+      <nav id="nav-menu">
+        <ul id="menu">
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Woman</a></li>
+          <li><a href="#">Kids</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="content">
+            <h1>Stefan Janoski</h1>
+            <h2 class="valor"><span>$</span>350</h2>
+            <p style="font-weight: bold">Desert Camo Orange</p>
+            <p style="font-size: 0.8rem">Release date: Oct 17 (Global)</p>
+            <p class="p-desc">
+              Com um design criativo, surge o tênis para skatistas Nike Zoom
+              Stefan Janoski, que mescla a estética minimalista com a proteção
+              máxima contra impactos. Além de uma construção durável e alta
+              aderência para aprimorar o ajuste do tênis ao skate.
+            </p>
+          </div>
+          <div class="content-img" id="slider">
+            <img src="img/nike05.png" class="img-item active" alt="" />
+            <img src="img/nike02.png" class="img-item" alt="" />
+            <img src="img/nike03.png" class="img-item" alt="" />
+            <!-- <img src="img/nike04.png" class="img-item" alt="" /> -->
+            <img src="img/nike06.png" class="img-item" alt="" />
+          </div>
+
+          <div class="content-aside">
+            <h2>Size</h2>
+            <button class="btn-size">S</button>
+            <button class="btn-size active">M</button>
+            <button class="btn-size">L</button>
+            <button class="btn-size">XL</button>
+            <button class="btn-size">2XL</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-donw container">
+        <div class="cart">
+          <button id="btn-bag">
+            ADD TO BAG <i class="fas fa-shopping-bag"></i>
+          </button>
+          <i class="far fa-heart"></i>
+        </div>
+
+        <div class="slider">
+          <label for="">Prev</label>
+          <button class="slide-prev"><i class="fas fa-arrow-left"></i></button>
+          <button class="slide-next"><i class="fas fa-arrow-right"></i></button>
+          <label for="">Next</label>
+        </div>
+
+        <div class="slides">
+          <div class="div-item active"></div>
+          <div class="div-item"></div>
+          <div class="div-item"></div>
+          <div class="div-item"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

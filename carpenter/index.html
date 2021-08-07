@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="styles/bootstrap/css/bootstrap.css" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- SVG-Inject -->
+    <script src="js/svg-inject.min.js"></script>
+
+    <!-- Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Fienile</title>
+  </head>
+  <body>
+    <div class="bg-buble">
+      <img
+        class="img-fluid buble"
+        src="images/bubble.svg"
+        onload="SVGInject(this)"
+      />
+    </div>
+    <header class="container fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Fienile</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link menu-item" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container main">
+      <section class="sec">
+        <div class="row">
+          <div class="col-6">
+            <div class="col-12 spacing-top">
+              <h1>Paixão Por Marcenaria.</h1>
+            </div>
+            <div class="col-6 mt-2">
+              <p class="hipen">
+                Feito a mão, sob medida e com controle de qualidade.
+              </p>
+            </div>
+            <div class="col-12 buttons">
+              <button class="btn btn-1">Trabalhos</button>
+              <button class="btn btn-2">Sobre</button>
+            </div>
+            <div class="social-media col-6 mt-5">
+              <a href="#"
+                ><img
+                  class="img-fluid fab-face"
+                  src="images/facebook.svg"
+                  onload="SVGInject(this)"
+              /></a>
+              <a href="#"
+                ><img
+                  class="img-fluid"
+                  src="images/instagram.svg"
+                  onload="SVGInject(this)"
+              /></a>
+              <a href="#">
+                <img
+                  class="img-fluid"
+                  src="images/twitter.svg"
+                  onload="SVGInject(this)"
+              /></a>
+            </div>
+          </div>
+          <div class="col-6">
+            <img class="img-fluid" src="images/moveis.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="content-design">
+        <h1 class="mt-5">Design e desenvolvimento de móveis</h1>
+        <div class="row moveis">
+          <div class="col-6">
+            <h3>MÓVEIS PLANEJADOS</h3>
+            <h2>Qual o foco?</h2>
+            <p style="width: 280px">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
+              aliquid suscipit et quos esse ullam quisquam rem voluptatum
+              deleniti nesciunt.
+            </p>
+          </div>
+          <div
+            class="
+              col-sm-12 col-lg-6 col-md-6
+              img-moveis
+              d-flex
+              justify-content-center
+            "
+            id="slider"
+          >
+            <img class="img-fluid" src="images/cadeira.png" alt="" />
+            <img class="img-fluid img-mesa" src="images/mesa.png" alt="" />
+            <img class="img-fluid" src="images/hack.png" alt="" />
+            <img class="img-fluid" src="images/planta.png" alt="" />
+            <img class="img-fluid" src="images/cadeiraPequena.png" alt="" />
+          </div>
+        </div>
+        <div class="row moveis">
+          <div
+            class="
+              col-sm-12 col-lg-6 col-md-6
+              img-moveis img-div-armario
+              d-flex
+              align-items-center
+              justify-content-center
+            "
+          >
+            <img
+              class="img-fluid img-mesa"
+              src="images/armarioMetragem.png"
+              alt=""
+            />
+          </div>
+          <div class="col-6 d-flex flex-column align-items-end">
+            <h3>do grande ao pequeno</h3>
+            <h2>Sob medida</h2>
+            <p style="width: 280px; text-align: right">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
+              aliquid suscipit et quos esse ullam quisquam rem voluptatum
+              deleniti nesciunt.
+            </p>
+          </div>
+        </div>
+        <div class="row moveis">
+          <div class="col-12">
+            <h3>Trabalhos</h3>
+            <h2>Projetos feitos para clientes</h2>
+            <p style="width: 50%; text-align: left">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+              doloribus similique quod porro doloremque sapiente nobis itaque
+              recusandae.
+            </p>
+          </div>
+          <div class="col-12 mt-5">
+            <div
+              id="carouselExampleControls"
+              class="carousel carousel-dark slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="images/WhatsApp Image 2021-05-23 at 20.34-1.png"
+                    class=""
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/WhatsApp Image 2021-05-23 at 20.34.png"
+                    class=""
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/WhatsApp Image 2021-05-26 at 22.18.png"
+                    class=""
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row moveis">
+          <h3>do grande ao pequeno</h3>
+          <h2>Sob medida</h2>
+        </div>
+      </section>
+    </main>
+
+    <script src="styles/bootstrap/js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

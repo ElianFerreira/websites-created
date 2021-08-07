@@ -1,0 +1,121 @@
+body {
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+  // width: 100vw;
+  overflow-x: hidden;
+}
+
+header {
+  position: relative;
+  bottom: -30px;
+  z-index: 1;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+main {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.cards {
+  height: 250px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  transform: translate(-70px, 45px);
+
+  h1,
+  p {
+    padding-left: 70px;
+  }
+
+  button {
+    margin-left: 70px;
+  }
+
+  h1 {
+    margin-top: 25px;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: start;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.space {
+  margin-top: 70px;
+}
+
+.span {
+  transform: translateY(-30px);
+}
+@keyframes upDown {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}
+
+.img-bob {
+  animation: upDown 1.5s ease infinite alternate;
+}
+
+.social {
+  position: absolute;
+  top: 200px;
+  right: -45px;
+
+  height: 200px;
+  width: 30px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  svg {
+    margin-bottom: 20px;
+    fill: white;
+    transition: ease 0.5s;
+    width: 40px;
+
+    &:hover {
+      transform: rotate(360deg);
+      transition: ease 0.5s;
+    }
+  }
+}
+
+@import 'mediaScreen';
