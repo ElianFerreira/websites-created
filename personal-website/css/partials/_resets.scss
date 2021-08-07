@@ -1,0 +1,46 @@
+/*-------------
+Global Resets
+------------------*/
+
+// Fonte Ralleway
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+* {
+  outline: none;
+}
+
+*:not(i) {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+body.stop-scrolling {
+  overflow-y: hidden;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.section.hide {
+  display: none;
+}

@@ -1,0 +1,160 @@
+/*-------------------
+Effects
+--------------*/
+
+.outer-shadow {
+  box-shadow: var(--outer-shadow);
+}
+.inner-shadow {
+  box-shadow: var(--inner-shadow);
+}
+
+.btn-1 {
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--skin-color);
+  background-color: transparent;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: none;
+
+  &::after {
+    border-radius: 30px;
+  }
+
+  &:hover {
+    color: var(--skin-color);
+  }
+}
+
+.hover-in-shadow {
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    box-shadow: var(--outer-shadow-0);
+  }
+
+  &:hover::after {
+    box-shadow: var(--inner-shadow);
+  }
+}
+
+.effect-wrap {
+  .effect {
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.effect-1 {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #8a49ff;
+  right: 10%;
+  bottom: 10%;
+  animation: spin 10s linear infinite alternate;
+}
+
+.effect-2 {
+  left: 3%;
+  bottom: 20%;
+  width: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  animation: topBounce 3s ease-in-out infinite;
+  div {
+    height: 3px;
+    width: 3px;
+    background-color: #ff9c07;
+    margin: 0 3px 8px;
+    animation: changeColor 5s ease-in-out infinite alternate;
+  }
+}
+
+.effect-3 {
+  height: 180px;
+  width: 180px;
+  border: 25px solid var(--skin-color);
+  border-radius: 50%;
+  left: 50%;
+  top: -120px;
+  animation: leftBounce 3s ease-in-out infinite;
+}
+
+.effect-4 {
+  border-top: 30px solid transparent;
+  border-left: 30px solid #06d79c;
+  left: 30%;
+  top: 20%;
+  animation: spin 12s linear infinite;
+  &::before {
+    content: '';
+    border-top: 30px solid transparent;
+    border-left: 30px solid #06d79c;
+    position: absolute;
+    left: -35px;
+    top: -25px;
+    opacity: 0.5;
+  }
+}
+
+.effect-5 {
+  height: 50px;
+  width: 50px;
+  right: 10%;
+  top: 30%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: spin 12s linear infinite;
+  div {
+    width: 1px;
+    background-color: #4dd0e1;
+  }
+}
+
+.spin-circle {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: spin 1s linear infinite;
+}
+
+.line-run {
+  animation: linesMove 2s ease infinite;
+}
+.stroke-ret {
+  animation: square 5s ease-in infinite alternate;
+}
+
+.fade-out-effect {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-black-50);
+  z-index: -1;
+  visibility: hidden;
+}
+.fade-out-effect.active {
+  visibility: visible;
+  z-index: 1000;
+  animation: fadeOut 0.3s ease-in-out;
+}

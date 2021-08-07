@@ -1,0 +1,103 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(350deg);
+  }
+}
+
+@keyframes topBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+}
+@keyframes leftBounce {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(25px);
+    border-color: #8a49ff;
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: #ff9c07;
+  }
+  50% {
+    background-color: var(--skin-color);
+  }
+  100% {
+    background-color: #8a49ff;
+  }
+}
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Animations svgs start
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(60%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes linesMove {
+  0%,
+  50% {
+    stroke-width: 3;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(900px);
+    stroke-width: 0;
+  }
+}
+
+@keyframes square {
+  from {
+    stroke-dasharray: 120 10;
+  }
+  to {
+    stroke-dasharray: 800 20;
+  }
+}
+
+@keyframes line {
+  from {
+    stroke-dasharray: 120 10;
+  }
+  to {
+    stroke-dasharray: 800 20;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
