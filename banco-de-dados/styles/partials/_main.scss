@@ -1,0 +1,102 @@
+main {
+  width: 100%;
+  height: calc(100vh - 80px);
+  margin-top: 80px;
+  font-family: 'Inter', sans-serif;
+
+  .info {
+    h1 {
+      position: relative;
+
+      &::before {
+        content: 'Olá';
+        position: absolute;
+        top: -20px;
+        left: 0;
+        font-size: 18px;
+        font-weight: 100;
+      }
+    }
+
+    p {
+      color: rgb(151, 151, 151);
+      font-weight: 300;
+      transition: all 0.3s;
+      cursor: default;
+      &:hover {
+        transition: all 0.3s;
+        color: #62f188;
+      }
+    }
+
+    .buttons {
+      .btn {
+        background-color: #62f188;
+        display: inline-block;
+        width: 130px;
+        height: 50px;
+        margin-right: 10px;
+        transition: all 0.3s;
+        cursor: pointer;
+      }
+      .btn-disciplina {
+        margin-right: 50px;
+        text-align: center;
+        line-height: 35px;
+        &:hover {
+          transition: all 0.3s;
+          transform: scale(1.1);
+          box-shadow: 0 0 1em #62f188;
+        }
+      }
+      .btn-algo {
+        background-color: transparent;
+        border: 1px solid #62f188;
+        color: #fff;
+        position: relative;
+        text-align: center;
+        line-height: 35px;
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: #62f188;
+          width: 0%;
+          height: 100%;
+          z-index: -1;
+          transition: all 0.5s;
+          border-radius: 2px;
+        }
+
+        &:hover {
+          color: #1a1a1a;
+          box-shadow: 0 0 1em #62f188;
+          transform: scale(1.1);
+          &::after {
+            transition: all 0.5s;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .social-media {
+      i {
+        font-size: 30px;
+        color: #ccc;
+
+        &:hover {
+          transition: all 0.3s;
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+
+  .dados {
+    margin: 200px 0;
+  }
+}
+
+

@@ -1,0 +1,70 @@
+/*---------
+header
+-----------*/
+
+.header {
+  padding: 20px 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: $bg-black-50;
+
+  // Logo Style
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
+    border-radius: 50%;
+    a {
+      color: #fff;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+  }
+
+  // Menu hamburguer
+  .hamburguer-btn {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+    &::after {
+      border-radius: 50%;
+    }
+
+    // Style span
+    span {
+      display: block;
+      height: 2px;
+      width: 16px;
+      background-color: $bg-black-900;
+      position: relative;
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $bg-black-900;
+      }
+      &:before {
+        top: -6px;
+      }
+      &:after {
+        top: 6px;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.tables > div {
+  height: 300px;
+}
+
+@media (max-width: 767px) {
+  .tables > div {
+    font-size: 12px;
+    height: 500px;
+  }
+}

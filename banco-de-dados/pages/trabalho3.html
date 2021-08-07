@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS && Bootstrap -->
+
+    <link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="header">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="logo">
+            <a href="../index.html">EF</a>
+          </div>
+          <div class="hamburguer-btn outer-shadow hover-in-shadow">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- Navigation menu start -->
+
+    <nav class="nav-menu">
+      <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
+      <div class="nav-menu-inner">
+        <ul>
+          <li>
+            <a href="#home" class="link-item active inner-shadow">Home</a>
+          </li>
+          <li>
+            <a
+              href="pages/trabalho1.html"
+              class="link-item outer-shadow hover-in-shadow"
+              >O que é Banco de dados?</a
+            >
+          </li>
+          <li>
+            <a
+              href="../pages/trabalho2.html"
+              class="link-item outer-shadow hover-in-shadow"
+              >Bancos de dados (SGBD)</a
+            >
+          </li>
+          <li>
+            <a href="#" class="link-item outer-shadow hover-in-shadow"
+              >Trabalho 3 (INCOMPLETO)</a
+            >
+          </li>
+          <li>
+            <a
+              href="../pages/trabalho4.html"
+              class="link-item outer-shadow hover-in-shadow"
+              >Projeto, DER, MER</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://elianferreira.github.io/projectBanco/"
+              target="_blank"
+              class="link-item outer-shadow hover-in-shadow"
+              >Trabalho Rising Sun</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Copyright text -->
+      <p class="copy-text">&copy; 2021 The Elian Ferreira</p>
+    </nav>
+    <div class="fade-out-effect"></div>
+    <!-- Navigation menu end -->
+    <!-- About me start -->
+    <section class="about-section section" id="about">
+      <div class="container">
+        <!-- about tabs start -->
+        <div class="row">
+          <div class="about-tabs">
+            <span class="tab-item outer-shadow active" data-target=".oracle"
+              >relacional</span
+            >
+            <span class="tab-item" data-target=".mysql">hierárquico</span>
+            <span class="tab-item" data-target=".sqlserver">rede</span>
+            <span class="tab-item" data-target=".sqlite"
+              >orientado para objetos</span
+            >
+          </div>
+        </div>
+        <!-- about tabs end -->
+
+        <!--  Oracle start -->
+        <div class="row">
+          <div class="oracle tab-content active">
+            <div class="row text-light">
+              <div class="col-lg">
+                <h1 class="fw-bold">Descrição</h1>
+                <p>
+                  Um banco de dados relacional é um banco de dados que modela os
+                  dados de uma forma que eles sejam percebidos pelo usuário como
+                  tabelas, ou mais formalmente relações.
+                </p>
+              </div>
+            </div>
+            <div class="row text-light">
+              <div class="col-lg my-5">
+                <h1 class="fw-bold text-end">Vantagens</h1>
+                <p class="text-end">
+                  As principais vantagens do banco de dados relacional é que são
+                  altamente estruturados e têm suportes teóricos consolidados da
+                  computação. Os dados são facilmente armazenados e recuperados
+                  por meio de SQL. Além disso, eles podem ser restritivos ao
+                  acesso e também permitir o uso em camadas.
+                </p>
+              </div>
+            </div>
+            <div class="row text-light">
+              <div class="col-lg my-5">
+                <h1 class="fw-bold">Desvantagens</h1>
+                <p class="">
+                  o principal problema quando utilizando um banco de dados
+                  relacional é a complexidade que surge quando ele é criado pela
+                  primeira vez. É absolutamente vital que as relações definidas
+                  entre as tabelas estão corretas e que cada conjunto de
+                  informações está ligada ao seu par. Embora menos informação
+                  tem de ser inseridos no total do que com outros bancos de
+                  dados , tornando -se cada ponto está configurado corretamente
+                  é um processo lento .
+                </p>
+              </div>
+            </div>
+            <div class="row text-light">
+              <div class="col-lg my-5">
+                <h1 class="fw-bold text-end">Principais Softwares</h1>
+                <p class="">Mysql, Oracle, MariaDB</p>
+              </div>
+            </div>
+            <div class="row text-light">
+              <div class="col-lg my-5">
+                <h1 class="fw-bold">Empresas que utilizam</h1>
+                <p class="">Netflix, Blackboard, Expedia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Oracle end -->
+
+        <!-- Mysql Start -->
+        <div class="row">
+          <div class="mysql tab-content">
+            <div class="row text-light">
+              <div class="col-lg">
+                <h1 class="fw-bold">Descrição</h1>
+                <p>
+                  Uma base de dados hierárquica é um tipo de sistema de
+                  gerenciamento de banco de dados que conecta registros numa
+                  estrutura de dados em árvore através de ligações de tal modo
+                  que cada tipo de registro tenha apenas um possuidor.
+                </p>
+              </div>
+            </div>
+            <div class="row text-light">
+              <div class="col-lg my-5">
+                <h1 class="fw-bold text-end">Vantagens</h1>
+                <p class="text-end">
+                  A vantagem de Bancos de Dados hierárquicos é que podem ser
+                  acessados e atualizados rapidamente porque a estrutura do tipo
+                  árvore e as relações entre os registos são previamente
+                  definidas. No entanto, esse recurso é uma faca de dois gumes.
+                </p>
+              </div>
+            </div>
+            <div class="row text-light">
+              <div class="col-lg my-5">
+                <h1 class="fw-bold">Desvantagens</h1>
+                <p class="">
+                  A réplica de registro possui duas grandes desvantagens: pode
+                  causar inconsistência de dados quando houver atualização, e o
+                  desperdício de espaço é inevitável. Usa-se um diagrama de
+                  estrutura de árvore para apresentar o esquema para uma base de
+                  dados hierárquica.
+                </p>
+              </div>
+            </div>
+            <div class="row text-light">
+              <div class="col-lg my-5">
+                <h1 class="fw-bold text-end">Principais Softwares</h1>
+                <p class="">
+                  Um DBMS hierárquico organiza dados em um arranjo em forma de
+                  árvore, na forma de uma hierarquia, em um design de cima para
+                  baixo ou de baixo para cima. A hierarquia é definida por um
+                  relacionamento pai-filho, em que um pai pode ter vários
+                  filhos, mas os filhos podem ter apenas um pai.
+                </p>
+              </div>
+            </div>
+            <div class="row text-light">
+              <div class="col-lg my-5">
+                <h1 class="fw-bold">Empresas que utilizam</h1>
+                <p class="">...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mysql  End -->
+
+        <!-- SQLServer start -->
+        <div class="row">
+          <div class="sqlserver tab-content">
+            <div class="row text-light">
+              <div class="col-lg">
+                <h1 class="fw-bold">Descrição</h1>
+                <p>
+                  Sua organização é semelhante à dos Bancos de Dados
+                  hierárquicos, é o modelo de dados que eliminou o conceito de
+                  hierarquia, permitindo que um mesmo registro estivesse
+                  envolvido em várias associações, um registro filho pode ser
+                  ligado a mais de um registro pai, criando conexões bastante
+                  complexas e são bastante utilizados em sistemas para
+                  computadores de grande porte (mainframe)
+                </p>
+              </div>
+
+              <div class="row text-light">
+                <div class="col-lg my-5">
+                  <h1 class="fw-bold text-end">Vantagens</h1>
+                  <p class="text-end">
+                    O uso de um modelo de camadas: Auxilia na elaboração do
+                    protocolo porque os protocolos que operam em uma camada
+                    específica tem definidas as informações que eles irão
+                    manipular assim como as interfaces com as camadas inferior e
+                    superior.
+                  </p>
+                </div>
+              </div>
+              <div class="row text-light">
+                <div class="col-lg my-5">
+                  <h1 class="fw-bold">Desvantagens</h1>
+                  <p class="">
+                    Desvantagens: o Rede pode ficar extremamente lenta em
+                    situações de tráfego pesado; o Problemas são difíceis de
+                    isolar; o Falha no cabo paralisa a rede inteira.
+                  </p>
+                </div>
+              </div>
+              <div class="row text-light">
+                <div class="col-lg my-5">
+                  <h1 class="fw-bold text-end">Principais Softwares</h1>
+                  <p class="">Nagios,Zabbix, Prtg</p>
+                </div>
+              </div>
+              <div class="row text-light">
+                <div class="col-lg my-5">
+                  <h1 class="fw-bold">Empresas que utilizam</h1>
+                  <p class="">
+                    Apple + Google no desenvolvimento da internet 6G. Neste
+                    exemplo de organizações em rede, temos duas gigantes da
+                    tecnologia. ...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SQLServer end -->
+        <!-- SQLite start -->
+        <div class="row">
+          <div class="sqlite tab-content">
+            <div class="row text-light">
+              <div class="col-lg">
+                <h1 class="fw-bold">Descrição</h1>
+                <p>
+                  Um banco de dados orientado a objetos é um banco de dados em
+                  que cada informação é armazenada na forma de objetos, ou seja,
+                  utiliza a estrutura de dados denominada orientação a objetos,
+                  a qual permeia as linguagens mais modernas. Começou a ser
+                  comercialmente viável em 1980.
+                </p>
+              </div>
+
+              <div class="row text-light">
+                <div class="col-lg my-5">
+                  <h1 class="fw-bold text-end">Vantagens</h1>
+                  <p class="text-end">
+                    Funciona melhor com linguagens orientadas a objeto, evitando
+                    a tal da impedance mismatch. Navegação pelos dados é feita
+                    de forma mais natural e expressiva na maioria dos casos.
+                    Alguns padrões de uso podem aumentar a performance (não usa
+                    JOIN). Melhor reuso.
+                  </p>
+                </div>
+              </div>
+              <div class="row text-light">
+                <div class="col-lg my-5">
+                  <h1 class="fw-bold">Desvantagens</h1>
+                  <p class="">
+                    Desvantagens. Falta padronização. Cada fornecedor usa uma
+                    forma diferente, determinando uma modelagem diferente. Há
+                    várias correntes que propõem formas diferentes de uso deste
+                    modelo.
+                  </p>
+                </div>
+              </div>
+              <div class="row text-light">
+                <div class="col-lg my-5">
+                  <h1 class="fw-bold text-end">Principais Softwares</h1>
+                  <p class="">
+                    Oracle, SQL Server e Sybase; ou gratuitos, mas igualmente
+                    eficientes como MySQL e PostgreSQL.
+                  </p>
+                </div>
+              </div>
+              <div class="row text-light">
+                <div class="col-lg my-5">
+                  <h1 class="fw-bold">Empresas que utilizam</h1>
+                  <p class="">...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SQlite end -->
+        <!-- mariaDB start -->
+      </div>
+    </section>
+    <!-- About me end -->
+    <script src="../js/main.js"></script>
+    <script src="../js/switcherPage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #1a1a1a;
+  border-radius: 6px;
+}
+
+@import 'partials/shadowEffects';
+@import 'partials/resets';
+@import 'partials/header';
+@import 'partials/nav-menu';
+@import 'partials/main';
+@import 'partials/timeline';
+@import 'partials/tables';
+@import 'partials/tabsSection';
+@import 'partials/animaçõesDevices';
