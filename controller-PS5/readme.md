@@ -11,6 +11,7 @@ Website feito para mostrar todos os trabalhos feitos durante o semestre de banco
 
 3 - Bootstrap para auxiliar na criação de Grids e templates.
 
+4 - E usada biblioteca Tilt.JS
 #
 
 ![page](https://user-images.githubusercontent.com/57501971/160376938-a28bb6d1-b1a5-4a97-9427-4920e5149c7c.png)
